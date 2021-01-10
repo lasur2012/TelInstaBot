@@ -4,10 +4,10 @@ from instabot import Bot
 
 '''write below  data of your bot'''
 
-TOKEN = '1304765276:AAFvf8-7RBkBuE7PsJBDvoqrtUou-ro4aUs'
+TOKEN = '---'
 TelBot = telebot.TeleBot(TOKEN)
 '''InstBot = Bot()
-InstBot.login(username = 'lasur2012', password = 'vW%t=^VWPGvin4e')'''
+InstBot.login(username = '---', password = '---')'''
 
 
 
@@ -42,7 +42,7 @@ def photo_handler(message):
 '''
 @TelBot.message_handler(commands = ['start']) # start command handler
 def start_handler(message):
-    if str(message.from_user.id) == '225882660':
+    if str(message.from_user.id) == '---':
         TelBot.send_message(message.from_user.id, text = f'Hi, {message.from_user.first_name}! To start with lets register in of your Instagram account /text /photo')
     else:
         TelBot.send_message(message.from_user.id,
